@@ -1,0 +1,140 @@
+@media screen and (min-width: 1921px) {
+    #animbackground {
+      background-size: cover;
+    }
+  }
+
+#animbackground {
+    /* background credit: u/LennSan
+        https://www.reddit.com/r/PixelArt/comments/5uybyu/oc_view_over_a_japanese_city_animated/ */
+    background-image: url("../assets/train-jp.gif");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.float-left {
+    float: left;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    width: 12%;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    margin: 0.5em;
+    font-family: Silkscreen, serif, sans-serif;
+}
+
+header h1:hover {
+    font-size: 2.2em;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header a:hover {
+    color: #ecbccc;
+}
+
+header a:active {
+    color: #f49c9c;
+}
+
+.main-content {
+    margin-top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto 0 20%;
+    height: 100%;
+    max-width: 1280px;
+}
+
+article {
+    background-color: #fff;
+    float: right;
+    padding: 1em;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4.5em;
+    line-height: 1.6;
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
+#contact {
+    display: none;
+}
+
+#contact p {
+    margin-bottom: 1em;
+}
+
+article label {
+    font-weight: bold;
+}
+
+article input[type="text"], textarea {
+    width: 97.5%;
+    padding: 0.3em;
+    margin: 0.2em;
+    border-width: 0.2em;
+    border-radius: 0.3em;
+    border-color:#f49c9c;
+}
+
+article input[type="submit"] {
+    background: #f49c9c;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.2em;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em 1.2em;
+    font-size: 1em;
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-container {
+    padding: 0.5em 0;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    padding: 0 1.25em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-right {
+    padding: 0 1.25em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#github-source {
+    width: 2em;
+    height: auto;
+}
