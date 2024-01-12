@@ -1,7 +1,26 @@
+<?php
+    $data = [
+        'title' => 'Home',
+        "articles" => [
+            [
+                'header' => 'Why are you taking this class?',
+                'content' => "I'm trying to narrow down what my specialization should be in the computer science field. Not that there's anything wrong with being an all-rounder,
+                but it also means that you really only have broad knowledge of each topic and no in-depth experience. Introduction to Web Programming has been one of my favorite
+                classes of all time, so there's no reason why I shouldn't continue.",
+            ],
+            [
+                'header' => 'What do you want to take away from this class?',
+                'content' => "By the end of CS3270, I would like a better understanding of PHP's use cases. What can it do that basic HTML cannot? I would also like an understanding
+                of how databases can be used to improve a website's functionality or features. I always thought it might be cool to create an anonymous message board on a site
+                with a low population, but I currently don't have the knowledge to execute it, as basic HTML doesn't store information.",
+            ]
+        ]
+    ]
+?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Carter :: CS3270</title>
+    <title>Carter :: <?php echo $data['title']?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css-sheet.css">
@@ -30,14 +49,10 @@
     <main class ="main-content">
         <div class="container">
             <article>
-                <h3>Why are you taking this class?</h3>
-                <p>I'm trying to narrow down what my specialization should be in the computer science field. Not that there's anything wrong with being an all-rounder,
-                but it also means that you really only have broad knowledge of each topic and no in-depth experience. Introduction to Web Programming has been one of my favorite
-                classes of all time, so there's no reason why I shouldn't continue.</p>
-                <h3>What do you want to take away from this class?</h3>
-                <p>By the end of CS3270, I would like a better understanding of PHP's use cases. What can it do that basic HTML cannot? I would also like an understanding
-                of how databases can be used to improve a website's functionality or features. I always thought it might be cool to create an anonymous message board on a site
-                with a low population, but I currently don't have the knowledge to execute it, as basic HTML doesn't store information.</p>
+                <?php foreach($data['articles'] as $article){ ?>
+                    <h3><?php echo $article['header']?></h3>
+                    <p><?php echo $article['content']?></p>
+                <?php } ?>
             </article>
             <article id="contact">
                 <form method="post" action="scripts/contact.php">
@@ -71,8 +86,8 @@
     <footer>
         <div class="footer-container">
             <ul class="footer-left">
-                <li><a href="https://github.com/carterleseman/project-page"><img src="assets/github-icon.gif"></a></li>
-                <li><a href="mailto:fo7140gp@go.minnstate.edu"><img src="assets/email-icon.gif"></a></li>
+                <li><a href="https://github.com/carterleseman/project-page" title="Source Code"><img src="assets/github-icon.gif"></a></li>
+                <li><a href="mailto:fo7140gp@go.minnstate.edu" title="Contact via Email"><img src="assets/email-icon.gif"></a></li>
             </ul>
         </div>
     </footer>

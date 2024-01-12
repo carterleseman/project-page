@@ -126,6 +126,7 @@ footer {
     padding: 0 1.25em;
     display: flex;
     justify-content: flex-start;
+    margin: 0;
 }
 
 .footer-right {
@@ -143,4 +144,8 @@ footer img {
 footer li {
     list-style-type: none;
     margin-right: 1em;
+}
+
+#about-me {
+    display: none;
 }
