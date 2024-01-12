@@ -70,9 +70,10 @@
     </main>
     <footer>
         <div class="footer-container">
-            <section class="footer-left"> 
-                <a href="https://github.com/carterleseman/wbpg.git"><img src="assets/github-icon.gif" id="github-source"></a>
-            </section>
+            <ul class="footer-left">
+                <li><a href="https://github.com/carterleseman/project-page"><img src="assets/github-icon.gif"></a></li>
+                <li><a href="mailto:fo7140gp@go.minnstate.edu"><img src="assets/email-icon.gif"></a></li>
+            </ul>
         </div>
     </footer>
     <script src="scripts/showNav.js"></script>
